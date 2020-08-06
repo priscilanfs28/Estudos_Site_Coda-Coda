@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
@@ -186,10 +187,44 @@
     <div class="row">
       <div class="col-lg-10 offset-lg-1 pt-5">
         <h2 class="article-title"><span class="display-4">CONTATO</span></h2>
-        <p>Quer o melhor site da região? Entre em contato!</p>
-        <p> E-mail: <a href="mailto:melhorempresadaregiao@gmail.com">melhorempresadaregiao@gmail.com</a>
-        </p>
+        <p><h4>Quer o melhor site da região? Entre em contato!</p></h4>
       </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form action="action_page.php">
+          <div class="form-row">
+            <div class="form-group col-12">
+              <label for="name">Nome:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+          </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" class="form-control" id="lastname" name="lastname">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label for="subject">Assunto:</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label for="message">Mensagem:</label>
+                <textarea rows="8" type="text" class="form-control" id="message" name="message"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12">
+                <input type="button" onclick="sendData()" class="btn btn-dark" value="Enviar" id="button"/>
+            </div>
+          </div>
+        </form>    
+      </div>
+    </div>
   </article>
 
   <footer>
@@ -203,5 +238,6 @@
       </div>
     </nav>
   </footer>
+
 </body>
 </html>
